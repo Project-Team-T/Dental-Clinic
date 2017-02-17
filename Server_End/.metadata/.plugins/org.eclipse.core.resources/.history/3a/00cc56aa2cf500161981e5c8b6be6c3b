@@ -1,0 +1,48 @@
+package dentist;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+@Entity  // This tells Hibernate to make a table out of this class
+public class Dentist {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)	
+	private long Dentist_id;
+	
+	@NotNull
+	private String Lname;  //Last Name
+	
+	@NotNull
+	private String Fname;  //First Name
+	
+	private String Gender;  //gender
+	//private String Birthday;  //birthday
+	private String Telephone; //number
+	private String Email;   //email
+	private String Address; //Address
+	private String AdditionalInformation;
+	private String Image; 
+	
+	public long getDentist_id(){
+		return Dentist_id;
+	}
+	public void setDentist_id(long id){
+		this.Dentist_id=id;
+	}
+	public String getLname(){
+		return Lname;
+	}
+	public String setLname(String Lname){
+		this.Lname = Lname;
+	}
+	public String getFname(){
+		return Fname;
+	}
+	public String setFname(String Fname){
+		this.Fname=Fname;
+	}
+}
