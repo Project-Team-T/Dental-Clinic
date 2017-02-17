@@ -1,9 +1,9 @@
 # Dental-Clinic
 
-##Create a new database using mysql command based on the sql file:   
-create database db_dental_clinic;
-create user 'dentalUser'@'localhost' identified by 'DentalPassword';
-grant all on db_dental_clinic.* to 'dentalUser'@'localhost';
+##Create a new database using mysql command based on the sql file:        
+create database db_dental_clinic;               
+create user 'dentalUser'@'localhost' identified by 'DentalPassword';                 
+grant all on db_dental_clinic.* to 'dentalUser'@'localhost';             
 
 
 How to build:       
