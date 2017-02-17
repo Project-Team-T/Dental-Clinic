@@ -1,6 +1,6 @@
 # Dental-Clinic
 
-How to build:
+How to build:       
 into the folder Dental_Clinic, run the following command line:
 $: gradle build.
 Then a jar file will be generated in the folder build/libs
