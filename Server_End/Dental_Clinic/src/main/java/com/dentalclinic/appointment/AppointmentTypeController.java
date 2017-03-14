@@ -52,11 +52,12 @@ public class AppointmentTypeController {
 		appointmentTypes.getAppointmenttypeList().addAll(this.atRepository.findAppointmentTypeName());
 		return appointmentTypes;
 	}
-	@RequestMapping(value="appointment/appointmentType")
-	public @ResponseBody void RequestSourceAppointmentType(@RequestParam int fetchAppointmentTypes){
+	@GetMapping(path="appointment/queryappointmentType")
+	public String RequestSourceAppointmentType(@RequestParam int fetchAppointmentTypes){
 		if(fetchAppointmentTypes == 1){
-			showSourceAppointmentTypeList();
+			return "redirect:/appointment/appointmentType.json";
 		}
+		return "redirect:/appointment/appointmentType.json";
 	}
 	
 	@RequestMapping(value="appointment/appointmentType/new",method = RequestMethod.GET)
