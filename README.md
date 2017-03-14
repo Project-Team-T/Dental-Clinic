@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 # Dental-Clinic
 
 ## Prepared: Mysql
