@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
+
+  <body>
+
+    <h2 th:text="#{welcome}">Welcome</h2>
+    <!-- <div class="row">
+        <div class="col-md-12">
+          <img class="img-responsive" src="../static/resources/images/pets.png" th:src="@{/resources/images/pets.png}"/>
+        </div>
+    </div> -->
+
+  </body>
+
+</html>
+<!--  
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="layout :: site-head">
+    <title>Dental Clinic</title>
+</head>
+
+<body>
+<header th:replace="layout :: site-header" />
+<h1>Welcome</h1>
+<p>Welcome to the Dental Clinic System.</p>
+
+
+<footer th:replace="layout :: site-footer" />
+</body>
+
+</html>
+-->

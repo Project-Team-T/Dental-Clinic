@@ -1,0 +1,39 @@
+package com.dentalclinic.appointment;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping(path="/appointment")
+public class AppointmentController {
+	
+	private static final String VIEWS_APPOINTMENT_CREATE_OR_UPDATE_FORM = "dentist/createOrUpdateAppointmentForm";
+	private final AppointmentRepository appointmentRP;
+	
+	@Autowired
+	public AppointmentController(AppointmentRepository appointmentService){
+		this.appointmentRP = appointmentService;
+	}
+	@InitBinder
+    public void setAllowedFields(WebDataBinder dataBinder) {
+        dataBinder.setDisallowedFields("id");
+    }
+	
+	@RequestMapping(path="")
+	public String AppointmentList(Map<String, Object> model){
+		List<Appointment> appointments = new ArrayList<>();
+		appointments.addAll(this.appointmentRP.findAll());
+		model.put("appointments", appointments);
+		return "appointment/appointmentList";
+	}
+	
+	@RequestMapping(path="/new")
+	public String
+}

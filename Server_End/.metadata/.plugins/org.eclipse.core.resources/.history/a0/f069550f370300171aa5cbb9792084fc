@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+  th:replace="~{fragments/layout :: layout (~{::body},'patient')}">
+
+<body>
+	<h2>New Patient</h2>
+	<form th:object = "${patient}" method = "post">
+		<div class="form-group has-feedback">
+			<input
+				th:replace="~{fragments/inputField :: input('Title','title' )}" />
+			<input
+				th:replace="~{fragments/inputField :: input('First Name','firstName' )}" />
+			<input
+				th:replace="~{fragments/inputField :: input('Last Name','lastName' )}" />
+			<input
+				th:replace="~{fragments/inputField :: input('Birthday','birthDate' )}" />
+			<input
+				th:replace="~{fragments/inputField :: input('Address','address' )}" />
+			<input
+				th:replace="~{fragments/inputField :: input('City','city' )}" />
+			<input
+				th:replace="~{fragments/inputField :: input('Telephone','telephone' )}" />
+			<input
+				th:replace="~{fragments/inputField :: input('Email','email' )}" />
+<!-- 			<input
+				th:replace="~{fragments/inputField :: input('Patient type','patient_type' )}" /> -->
+			<input
+				th:replace="~{fragments/inputField :: input('PPS','pps' )}" />
+			<input
+				th:replace="~{fragments/inputField :: input('Medical Consideration','medical_consideration' )}" />
+		</div>
+		
+		<div class="form-group">
+	      <div class="col-sm-offset-2 col-sm-10">
+	        <button
+	          th:with="text=${patient['new']} ? 'Add Patient' : 'Update Patient'"
+	          class="btn btn-default" type="submit" th:text="${text}">Add
+	          Patient</button>
+	      </div>
+	    </div> 
+    
+	</form>
+
+</body>
+</html>

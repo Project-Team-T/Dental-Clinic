@@ -1,0 +1,13 @@
+//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc\tTorg.eclipse.cdt.ui.presentation\tTorg.eclipse.cdt.ui.CEditor.presentation\tTorg.eclipse.debug.ui.presentation\tTorg.eclipse.egit.ui.GitTheme\tTorg.eclipse.jdt.ui.presentation\tTorg.eclipse.rse.ui.presentation\tTorg.eclipse.rse.ui.remotecommandsview.presentation\tTorg.eclipse.recommenders.snipmatch.rcp.themeElementCategory\tTcom.springsource.sts.roo.ui.presentation\tTorg.eclipse.wst.sse.ui\tTorg.eclipse.mylyn.tasks.ui.presentation\tTorg.eclipse.compare.contentmergeviewer.TextMergeViewer\tTorg.eclipse.ui.presentation.default\tTorg.eclipse.mylyn.wikitext.ui.presentation
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.mylyn.wikitext.ui.presentation.monospaceFont
+PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.m2e.discovery;
+eclipse.preferences.version=1
+org.eclipse.debug.ui.VariableTextFont=1|.SF NS Text|13.0|0|COCOA|1|.SFNSText-Regular;
+org.eclipse.jface.dialogfont=1|.SF NS Text|13.0|0|COCOA|1|.SFNSText-Regular;
+org.eclipse.jface.textfont=1|Monaco|13.0|0|COCOA|1|Monaco;
+org.eclipse.mylyn.tasks.ui.fonts.task.editor.comment=1|Lucida Grande|13.0|0|COCOA|1|LucidaGrande;
+org.eclipse.mylyn.wikitext.tasks.ui.monospaceFont=1|Courier|13.0|0|COCOA|1|Courier;
+org.eclipse.mylyn.wikitext.ui.presentation.monospaceFont=1|Courier|13.0|0|COCOA|1|Courier;
+org.eclipse.ui.workbench.TAB_TEXT_FONT=1|.SF NS Text|13.0|0|COCOA|1|.SFNSText-Regular;
+org.eclipse.ui.workbench.texteditor.blockSelectionModeFont=1|Monaco|13.0|0|COCOA|1|Monaco;

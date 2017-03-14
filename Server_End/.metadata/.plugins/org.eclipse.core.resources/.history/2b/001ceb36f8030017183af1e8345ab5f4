@@ -1,0 +1,62 @@
+package com.dentalclinic.dentist;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.dentalclinic.patient.Patient;
+
+@Controller
+@RequestMapping(path="/dentist/schedule")
+public class ScheduleController {
+	
+	private static final String VIEWS_SCHEDULE_CREATE_OR_UPDATE_FORM = "dentist/createOrUpdateScheduleForm";
+	private final ScheduleRepository scheduleRP;
+	
+	@Autowired
+	public ScheduleController(ScheduleRepository scheduleService){
+		this.scheduleRP = scheduleService;
+	}
+	@InitBinder
+    public void setAllowedFields(WebDataBinder dataBinder) {
+        dataBinder.setDisallowedFields("id");
+    }
+	
+	@GetMapping(path="")
+    public String ScheduleList(Map<String, Object> model) {
+		List<Schedule> schedules = new ArrayList<Schedule>();
+		schedules.addAll(scheduleRP.findAll());
+		model.put("schedules", schedules);
+        return "dentist/scheduleList";
+    }
+	
+	@RequestMapping(value = "/new", method = RequestMethod.GET)
+    public String initCreationForm(Map<String, Object> model) {
+        Patient patient = new Patient();
+        model.put("patient", patient);
+        return VIEWS_SCHEDULE_CREATE_OR_UPDATE_FORM;
+    }
+
+    @RequestMapping(value = "/new", method = RequestMethod.POST)
+    public String processCreationForm(@Valid Patient patient, BindingResult result) {
+        if (result.hasErrors()) {
+            return VIEWS_SCHEDULE_CREATE_OR_UPDATE_FORM;
+        } else {
+            this.scheduleRP.save(patient);
+            return "redirect:/patient/" + patient.getId();
+        }
+    }
+
+}

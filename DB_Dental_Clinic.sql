@@ -1,3 +1,3 @@
-create database db_dental_clinic;
+create database DB_Dental_Clinic;
 create user 'dentalUser'@'localhost' identified by 'DentalPassword';
-grant all on db_dental_clinic.* to 'dentalUser'@'localhost';
+grant all on DB_Dental_Clinic.* to 'dentalUser'@'localhost';

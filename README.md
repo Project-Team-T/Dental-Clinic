@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # Dental-Clinic
 
 ##Create a new database using mysql command based on the sql file:        
@@ -20,3 +21,5 @@ http://localhost:8080/dentist/add?Lname=Fan&Fname=Anger&Gender=Female&Phonenumbe
 
 Check all the dentist:       
 http://localhost:8080/dentist/all 
+=======
+>>>>>>> Stashed changes

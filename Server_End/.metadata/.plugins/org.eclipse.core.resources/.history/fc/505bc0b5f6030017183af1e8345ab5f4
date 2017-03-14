@@ -1,0 +1,40 @@
+package com.dentalclinic.dentist;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping(path="/dentist/schedule")
+public class ScheduleController {
+	
+	private static final String VIEWS_DENTIST_CREATE_OR_UPDATE_FORM = "dentist/createOrUpdateDentistForm";
+	private final ScheduleRepository scheduleRP;
+	
+	@Autowired
+	public ScheduleController(ScheduleRepository scheduleService){
+		this.scheduleRP = scheduleService;
+	}
+	@InitBinder
+    public void setAllowedFields(WebDataBinder dataBinder) {
+        dataBinder.setDisallowedFields("id");
+    }
+	
+	@GetMapping(path="")
+    public String ScheduleList(Map<String, Object> model) {
+		List<Schedule> schedules = new ArrayList<Schedule>();
+		Dentists dentists = new Dentists();
+		dentists.getDentistList().addAll((Collection<? extends Dentist>) this.dtRepository.findAll());
+		model.put("dentists", dentists);
+        return "dentist/dentistList";
+    }
+
+}

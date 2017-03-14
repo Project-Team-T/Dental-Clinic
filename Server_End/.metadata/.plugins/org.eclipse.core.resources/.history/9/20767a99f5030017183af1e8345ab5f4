@@ -1,0 +1,25 @@
+package com.dentalclinic.dentist;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping(path="/dentist/schedule")
+public class ScheduleController {
+	
+	private static final String VIEWS_DENTIST_CREATE_OR_UPDATE_FORM = "dentist/createOrUpdateDentistForm";
+	private final DentistRepository dtRepository;
+	
+	@Autowired
+	public DentistController(DentistRepository dentalService){
+		this.dtRepository = dentalService;
+	}
+	@InitBinder
+    public void setAllowedFields(WebDataBinder dataBinder) {
+        dataBinder.setDisallowedFields("id");
+    }
+
+}

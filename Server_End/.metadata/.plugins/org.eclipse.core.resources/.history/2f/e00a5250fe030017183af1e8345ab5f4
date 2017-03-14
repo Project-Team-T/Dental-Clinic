@@ -1,0 +1,56 @@
+package com.dentalclinic.dentist;
+
+import java.sql.Time;
+import java.util.Date;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import com.dentalclinic.model.BaseEntity;
+
+@Entity
+@Table(name = "schedule")
+public class Schedule extends BaseEntity{
+	
+	@Column(name="Day")
+	@NotEmpty
+	private String Day;
+	
+	@NotEmpty
+	@Column(name = "Time_begin")
+    @Temporal(TemporalType.TIMESTAMP)
+    @DateTimeFormat(pattern = "HH:mm:ss")
+    private Time Time_begin;
+	
+	@NotEmpty
+	@Column(name = "Time_end")
+	@Temporal(TemporalType.TIMESTAMP)
+	@DateTimeFormat(pattern = "HH:mm:ss")
+	private Time Time_end;
+	
+	public String getDay() {
+		return Day;
+	}
+	public void setDay(String day) {
+		Day = day;
+	}
+	
+	public Date getTime_begin(){
+		return this.Time_begin;
+	}
+	public void setTime_begin(Time Time_begin){
+		this.Time_begin = Time_begin;
+	}
+	public Date getTime_end(){
+		return this.Time_end;
+	}
+	public void setTime_end(Time Time_end){
+		this.Time_end=Time_end;
+	}
+
+}
