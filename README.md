@@ -1,25 +1,21 @@
 <<<<<<< Updated upstream
 # Dental-Clinic
 
-##Create a new database using mysql command based on the sql file:        
-create database db_dental_clinic;               
-create user 'dentalUser'@'localhost' identified by 'DentalPassword';                 
-grant all on db_dental_clinic.* to 'dentalUser'@'localhost';             
+## Prepared: Mysql
+Create a database used the commends in DB_Dental_Clinic.sql:
+####################
+create database DB_Dental_Clinic;
+create user 'dentalUser'@'localhost' identified by 'DentalPassword';
+grant all on DB_Dental_Clinic.* to 'dentalUser'@'localhost';
+####################
+
+Then check src/main/resouces/application.properties, make sure you have the correct username and password of mysql.
+
+## Gradle build and run:
+
+./gradlew clean build && java -jar build/libs/Dental-Clinic-0.1.0.jar
 
 
-How to build:       
-into the folder Dental_Clinic, run the following command line:     
-$: gradle build.
-Then a jar file will be generated in the folder build/libs
-then run this jar file:
-$ java -jar build/libs/Dental-Clinic-0.1.0.jar
+## get the appointmentTypes API: 
+http://localhost:8001/appointment/appointmentType.json
 
-###interface:
-add a new dentist:       
-http://localhost:8080/dentist/add?Lname=Fan&Fname=Anger&Gender=Female&Phonenumber=08976435&Email=12345678@gmail.com&Address=null&AdditionalInformation=Dr&Image=url
-
-
-Check all the dentist:       
-http://localhost:8080/dentist/all 
-=======
->>>>>>> Stashed changes
