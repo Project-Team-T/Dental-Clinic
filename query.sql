@@ -1,0 +1,6 @@
+-- Table:  
+-- Dentist
+-- AppointmentType
+-- DentistAppointmentType
+
+

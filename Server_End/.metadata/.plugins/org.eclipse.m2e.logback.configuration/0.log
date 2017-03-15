@@ -5272,3 +5272,4 @@ java.net.UnknownHostException: services.gradle.org
 2017-03-14 20:32:57,100 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 35 resources
 2017-03-14 20:32:57,111 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-03-14 20:32:57,113 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/fanfan/Documents/studying/Project/0_git/Dental-Clinic/spring-petclinic/src/test/resources
+2017-03-15 10:40:53,302 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not out-of-date. No remote download required.

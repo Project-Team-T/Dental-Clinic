@@ -23,3 +23,6 @@ Then check src/main/resouces/application.properties, make sure you have the corr
 ## get the appointmentTypes API: 
 http://localhost:8001/appointment/appointmentType.json
 
+## Based on the appointmentType ID get the list of dentists:
+http://localhost:8001/dentist/querybyAppointmentType?Aptype_id=1 
+
