@@ -126,9 +126,9 @@ public class DentistController {
 		}
 	
 	@GetMapping(path="/querytimeavailabe")
-	public @ResponseBody List<DaysAvailableWithDentist> queryavailabletime (@RequestParam int dentist_id){
+	public @ResponseBody List<DaysAvailableWithDentist> queryavailabletime (@RequestParam int dentistId){
 		List<DaysAvailableWithDentist> schedules = new ArrayList<>();
-		schedules.addAll(this.scReposity.findTimeAvailableByDentistId(dentist_id));
+		schedules.addAll(this.scReposity.findTimeAvailableByDentistId(dentistId));
 		return schedules;	
 	}
 	
