@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'patients')}">
+
+<body>
+	<h2>Patients:</h2>
+	<table id="patients" class="table table-striped">
+		<thead>
+			<tr>
+				<th>Patient Name</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="patient : ${patients.PatientList}">
+				<td th:text = "${patient.title+' ' + patient.firstName + ' ' + patient.lastName}"></td>
+				<td th:text = "${patient.email}"></td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<br />
+	<a class="btn btn-default" th:href="@{/patient/new}">Add Patient</a>
+  </body>
+
+</body>
+</html>

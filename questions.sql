@@ -36,6 +36,13 @@ List<SurveyAnswerStatistics> findSurveyCount();
 -------------------------------------------------
 
 
+#color:
+#89949B
+#2B2B2B
+#B4CF2A
+rgba(150, 81, 150, 1.00)
+rgba(128, 41, 136, 1.00)    #802988
+
 
 
 

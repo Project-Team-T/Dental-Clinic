@@ -10,3 +10,13 @@ Server_End/.metadata/.log
 Server_End/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
 
 *.xmi
+
+Server_End/.metadata/.log
+
+Server_End/.metadata/.log
+
+*.snap
+
+*.index
+
+*.class
