@@ -18,6 +18,9 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import com.dentalclinic.model.BaseEntity;
 import com.dentalclinic.patient.*;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import com.dentalclinic.dentist.*;
 //import com.dentalclinic.appointment.*;
 
@@ -39,10 +42,12 @@ public class Appointment extends BaseEntity{
   
     @ManyToOne
     @JoinColumn(name="patient_id")
+	@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class)
     private Patient patient;
     
     @ManyToOne
     @JoinColumn(name="dentist_id")
+	@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class)
     private Dentist dentist;
     
     @ManyToOne
@@ -51,7 +56,8 @@ public class Appointment extends BaseEntity{
     
     public void setDate(Date date){
     	this.date = date;
-    }   
+    }  
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm",timezone = "GMT+0")
     public Date getDate(){
     	return this.date;
     }

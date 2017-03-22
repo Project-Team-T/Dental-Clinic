@@ -1,0 +1,91 @@
+/**
+ * 
+ */
+package com.example.blog;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
+/**
+ * @author fanfan
+ *
+ */
+
+@Entity
+@JsonIdentityInfo(generator=ObjectIdGenerators.IntSequenceGenerator.class, property="@id")
+public class Blog {
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
+    
+    private String title;
+    private String content;
+    private boolean deleted = false;
+    
+    @ManyToOne
+//    @JsonManagedReference
+    private User creator;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public boolean isDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
+    }
+    
+    public User getCreator(){
+    	return this.creator;
+    }
+    public void setCreator(User user){
+    	this.creator = user;
+    }
+}
+
+class Blogidtitle{
+	private Integer id;
+	private String title;
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+}

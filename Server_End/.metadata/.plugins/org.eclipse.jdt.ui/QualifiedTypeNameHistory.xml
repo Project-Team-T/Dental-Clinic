@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="dentist.DentistRepository"/>
-<fullyQualifiedTypeName name="dentist.Dentist"/>
-<fullyQualifiedTypeName name="com.dentalclinic.model.NamedEntity"/>
-<fullyQualifiedTypeName name="com.dentalclinic.appointment.Appointment"/>
-<fullyQualifiedTypeName name="java.sql.Date"/>
-<fullyQualifiedTypeName name="javax.persistence.FetchType"/>
-<fullyQualifiedTypeName name="javax.persistence.ManyToMany"/>
-<fullyQualifiedTypeName name="com.dentalclinic.model.BaseEntity"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 <fullyQualifiedTypeName name="com.sun.javafx.collections.MappingChange.Map"/>
-<fullyQualifiedTypeName name="javax.persistence.Entity"/>
 <fullyQualifiedTypeName name="org.hibernate.annotations.Table"/>
 <fullyQualifiedTypeName name="javax.persistence.Table"/>
 <fullyQualifiedTypeName name="javax.persistence.PrimaryKeyJoinColumn"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="javax.persistence.Embeddable"/>
 <fullyQualifiedTypeName name="com.dentalclinic.appointment.AppointmentType"/>
-<fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="javax.persistence.AssociationOverrides"/>
@@ -25,7 +14,6 @@
 <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
 <fullyQualifiedTypeName name="java.beans.Transient"/>
 <fullyQualifiedTypeName name="javax.persistence.IdClass"/>
-<fullyQualifiedTypeName name="javax.persistence.Id"/>
 <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
 <fullyQualifiedTypeName name="javax.persistence.Column"/>
 <fullyQualifiedTypeName name="javax.persistence.EmbeddedId"/>
@@ -37,8 +25,6 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="org.springframework.ui.ModelMap"/>
 <fullyQualifiedTypeName name="org.springframework.util.StringUtils"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="javax.persistence.Cacheable"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="org.springframework.cache.annotation.Cacheable"/>
@@ -46,4 +32,32 @@
 <fullyQualifiedTypeName name="com.dentalclinic.patient.Patient"/>
 <fullyQualifiedTypeName name="com.sun.corba.se.spi.activation.Repository"/>
 <fullyQualifiedTypeName name="org.springframework.data.repository.Repository"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.ObjectIdGenerators.PropertyGenerator"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="org.springframework.data.annotation.Id"/>
+<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+<fullyQualifiedTypeName name="org.springframework.data.web.PageableDefault"/>
+<fullyQualifiedTypeName name="org.springframework.data.domain.Page"/>
+<fullyQualifiedTypeName name="org.springframework.data.domain.Pageable"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="org.springframework.data.domain.Sort"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonManagedReference"/>
+<fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonBackReference"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.ObjectIdGenerators"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIdentityInfo"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.ObjectIdGenerators.IntSequenceGenerator"/>
+<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpEntity"/>
+<fullyQualifiedTypeName name="java.io.UnsupportedEncodingException"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpHeaders"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+<fullyQualifiedTypeName name="com.example.blog.Blogidtitle"/>
 </qualifiedTypeNameHistroy>

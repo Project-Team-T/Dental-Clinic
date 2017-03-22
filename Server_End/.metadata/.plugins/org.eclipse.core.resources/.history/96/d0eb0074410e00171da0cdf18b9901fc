@@ -1,0 +1,26 @@
+package com.example.blog;
+
+public class Blogidtitle_p {
+	private Integer id;
+	private String title;
+	
+	public Blogidtitle_p(){}
+	
+	public Blogidtitle_p(java.lang.String title){
+//		this.id = id;
+		this.title = title;
+	}
+	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+}

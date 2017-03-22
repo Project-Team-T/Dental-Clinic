@@ -1,7 +1,6 @@
 package com.dentalclinic.dentist;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
@@ -10,7 +9,6 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,8 +17,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
-import com.dentalclinic.patient.Patient;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping(path="/dentist/{dentistId}/schedule")
@@ -45,13 +43,14 @@ public class ScheduleController {
 		return this.dentistRP.findById(dentistId);
 	}
 	
-	@GetMapping(path="")
+	@GetMapping(path="/schedules")
     public String ScheduleList(Map<String, Object> model) {
 		List<Schedule> schedules = new ArrayList<Schedule>();
 		schedules.addAll(scheduleRP.findAll());
 		model.put("schedules", schedules);
         return "dentist/scheduleList";
     }
+	
 	
 	@RequestMapping(value = "/new", method = RequestMethod.GET)
     public String initCreationForm(Map<String, Object> model) {

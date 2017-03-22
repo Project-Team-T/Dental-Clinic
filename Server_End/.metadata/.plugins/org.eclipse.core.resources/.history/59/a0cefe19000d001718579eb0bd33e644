@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package com.example.blog;
+
+import java.util.Collection;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.Repository;
+
+/**
+ * @author fanfan
+ *
+ */
+public interface BlogRepository extends Repository<Blog, Integer> {
+
+	@Query("select blog from Blog blog join blog.creator creator where creator.role = ?1")
+	Collection<Blog> findByRole(String role);
+
+	
+	@Query("select blog from Blog blog join blog.creator creator where creator.role = ?1")
+    Page<Blog> findByRole(String role, Pageable pageable);
+}

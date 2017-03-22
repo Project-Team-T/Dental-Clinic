@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.example.blog;
+
+import org.springframework.data.repository.Repository;
+
+/**
+ * @author fanfan
+ *
+ */
+public interface BlogRepository extends Repository<Blog, Integer> {
+
+}

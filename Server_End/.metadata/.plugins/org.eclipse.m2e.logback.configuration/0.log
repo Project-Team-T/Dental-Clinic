@@ -5273,3 +5273,91 @@ java.net.UnknownHostException: services.gradle.org
 2017-03-14 20:32:57,111 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-03-14 20:32:57,113 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/fanfan/Documents/studying/Project/0_git/Dental-Clinic/spring-petclinic/src/test/resources
 2017-03-15 10:40:53,302 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not out-of-date. No remote download required.
+2017-03-16 11:10:24,732 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is out-of-date. Remote download required.
+2017-03-17 18:04:46,067 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is out-of-date. Remote download required.
+2017-03-19 23:12:24,850 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is out-of-date. Remote download required.
+2017-03-21 11:55:19,216 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is out-of-date. Remote download required.
+2017-03-21 14:04:27,638 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not out-of-date. No remote download required.
+2017-03-22 10:14:25,810 [Worker-4] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not out-of-date. No remote download required.
+2017-03-22 10:15:18,884 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - dotGitDirectory /Users/fanfan/Documents/studying/Project/0_git/Dental-Clinic/spring-petclinic/.git
+2017-03-22 10:15:19,071 [Thread-30] ERROR org.eclipse.jgit.util.FS - xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+
+2017-03-22 10:15:19,084 [Thread-31] ERROR org.eclipse.jgit.util.FS - xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+
+2017-03-22 10:15:19,141 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.build.user.name Xiangting Fan
+2017-03-22 10:15:19,142 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.build.user.email isfanxt@gmail.com
+2017-03-22 10:15:19,231 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.branch master
+2017-03-22 10:15:19,238 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - --always = true
+2017-03-22 10:15:19,240 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - --dirty = -dirty
+2017-03-22 10:15:19,241 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - --abbrev = 7
+2017-03-22 10:15:19,258 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Tag refs [[]]
+2017-03-22 10:15:19,259 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Created map: [{}]
+2017-03-22 10:15:19,259 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - HEAD is [f792522b3dffca918f52010c8593999088034e19]
+2017-03-22 10:15:19,526 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.commit.id.describe f792522-dirty
+2017-03-22 10:15:19,527 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.commit.id f792522b3dffca918f52010c8593999088034e19
+2017-03-22 10:15:19,527 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.commit.id.abbrev f792522
+2017-03-22 10:15:19,570 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.dirty true
+2017-03-22 10:15:19,572 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.commit.user.name Stephane Nicoll
+2017-03-22 10:15:19,573 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.commit.user.email snicoll@pivotal.io
+2017-03-22 10:15:19,573 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.commit.message.full Merge pull request #229 from henri-tremblay:ehcacheback
+
+* pr/229:
+  Polish contribution
+  Put Ehcache back
+2017-03-22 10:15:19,573 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.commit.message.short Merge pull request #229 from henri-tremblay:ehcacheback
+2017-03-22 10:15:19,574 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.commit.time 2017-02-17T11:32:01+0000
+2017-03-22 10:15:19,574 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.remote.origin.url git@github.com:spring-projects/spring-petclinic.git
+2017-03-22 10:15:19,608 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.tags 
+2017-03-22 10:15:19,616 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Tag refs [[]]
+2017-03-22 10:15:19,617 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.closest.tag.name 
+2017-03-22 10:15:19,622 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Tag refs [[]]
+2017-03-22 10:15:19,624 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.closest.tag.commit.count 
+2017-03-22 10:15:19,625 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.build.time 2017-03-22T10:15:19+0000
+2017-03-22 10:15:19,625 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.build.version 1.5.1
+2017-03-22 10:15:24,627 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.build.host fanfan.local
+2017-03-22 10:15:24,627 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - git.commit.id.describe-short f792522-dirty
+2017-03-22 10:15:24,627 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.build.user.email
+2017-03-22 10:15:24,628 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.build.host
+2017-03-22 10:15:24,628 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.dirty
+2017-03-22 10:15:24,628 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.remote.origin.url
+2017-03-22 10:15:24,628 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.closest.tag.name
+2017-03-22 10:15:24,628 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.commit.id.describe-short
+2017-03-22 10:15:24,628 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.commit.user.email
+2017-03-22 10:15:24,628 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.commit.time
+2017-03-22 10:15:24,628 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.commit.message.full
+2017-03-22 10:15:24,629 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.build.version
+2017-03-22 10:15:24,629 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.commit.message.short
+2017-03-22 10:15:24,629 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.commit.id.abbrev
+2017-03-22 10:15:24,629 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.branch
+2017-03-22 10:15:24,629 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.build.user.name
+2017-03-22 10:15:24,629 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.closest.tag.commit.count
+2017-03-22 10:15:24,629 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.commit.id.describe
+2017-03-22 10:15:24,629 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.commit.id
+2017-03-22 10:15:24,629 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.tags
+2017-03-22 10:15:24,629 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.build.time
+2017-03-22 10:15:24,629 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - found property git.commit.user.name
+2017-03-22 10:15:24,648 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Writing properties file to [/Users/fanfan/Documents/studying/Project/0_git/Dental-Clinic/spring-petclinic/target/classes/git.properties] (for module petclinic)...
+2017-03-22 10:15:26,420 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - /Users/fanfan/Documents/studying/Project/0_git/Dental-Clinic/spring-petclinic/src/main/less
+2017-03-22 10:15:26,420 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Executing the mojo: 
+2017-03-22 10:15:26,420 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Wro4j Model path: /Users/fanfan/Documents/studying/Project/0_git/Dental-Clinic/spring-petclinic/src/main/wro/wro.xml
+2017-03-22 10:15:26,420 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - targetGroups: null
+2017-03-22 10:15:26,420 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - minimize: true
+2017-03-22 10:15:26,420 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - ignoreMissingResources: null
+2017-03-22 10:15:26,420 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - parallelProcessing: false
+2017-03-22 10:15:26,420 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - buildDirectory: /Users/fanfan/Documents/studying/Project/0_git/Dental-Clinic/spring-petclinic/target
+2017-03-22 10:15:26,431 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - destinationFolder: /Users/fanfan/Documents/studying/Project/0_git/Dental-Clinic/spring-petclinic/target
+2017-03-22 10:15:26,431 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - cssDestinationFolder: /Users/fanfan/Documents/studying/Project/0_git/Dental-Clinic/spring-petclinic/target/classes/static/resources/css
+2017-03-22 10:15:27,530 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - The following groups will be processed: [petclinic]
+2017-03-22 10:15:27,531 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - folder: /Users/fanfan/Documents/studying/Project/0_git/Dental-Clinic/spring-petclinic/target/classes/static/resources/css
+2017-03-22 10:15:27,531 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - processing group: petclinic.css
+2017-03-22 10:15:33,847 [Worker-11] WARN  r.i.w.e.p.css.Less4jProcessor - Less warnings are:
+2017-03-22 10:15:33,849 [Worker-11] WARN  r.i.w.e.p.css.Less4jProcessor - 10:1 Cannot link source map. Css result location is not know and could not be deduced from input less source..
+2017-03-22 10:15:33,868 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - file size: petclinic.css -> 152399 bytes
+2017-03-22 10:15:33,869 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - /Users/fanfan/Documents/studying/Project/0_git/Dental-Clinic/spring-petclinic/target/classes/static/resources/css/petclinic.css (152399 bytes)
+2017-03-22 10:15:33,869 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - folder: /Users/fanfan/Documents/studying/Project/0_git/Dental-Clinic/spring-petclinic/target
+2017-03-22 10:15:33,869 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - processing group: petclinic.js
+2017-03-22 10:15:34,081 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-22 10:15:34,083 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2017-03-22 10:15:34,113 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 35 resources
+2017-03-22 10:15:34,161 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-22 10:15:34,161 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/fanfan/Documents/studying/Project/0_git/Dental-Clinic/spring-petclinic/src/test/resources

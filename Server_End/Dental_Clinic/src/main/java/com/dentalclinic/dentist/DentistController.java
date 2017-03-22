@@ -33,10 +33,12 @@ public class DentistController {
 	
 	private static final String VIEWS_DENTIST_CREATE_OR_UPDATE_FORM = "dentist/createOrUpdateDentistForm";
 	private final DentistRepository dtRepository;
+	private final ScheduleRepository scReposity;
 	
 	@Autowired
-	public DentistController(DentistRepository dentalService){
+	public DentistController(DentistRepository dentalService, ScheduleRepository scheduleService){
 		this.dtRepository = dentalService;
+		this.scReposity = scheduleService;
 	}
 	@InitBinder
     public void setAllowedFields(WebDataBinder dataBinder) {
@@ -61,6 +63,7 @@ public class DentistController {
         Dentists dentists = new Dentists();
 //        dentists.getDentistList().addAll((Collection<? extends Dentist>) this.dtRepository.findAll());
         dentists.getDentistList().addAll(this.dtRepository.findDentistNames());
+//        dentists.getDentistList().addAll(this.dtRepository.findAll());
         return dentists;
     }
 	
@@ -114,11 +117,18 @@ public class DentistController {
 	}
 	
 	@GetMapping(path="/querybyAppointmentType")
-	public @ResponseBody List<Dentist> addNewDentist (@RequestParam int Aptype_id){
+	public @ResponseBody List<Dentist> QueryDentistByApptype (@RequestParam int Aptype_id){
 		List<Dentist> dentists = new ArrayList<>();
 		dentists.addAll(this.dtRepository.findDentistbyAppType(Aptype_id));
 		return dentists;	
 		}
+	
+	@GetMapping(path="/querytimeavailabe.json")
+	public @ResponseBody List<Schedule> queryavailabletime (@RequestParam int dentist_id){
+		List<Schedule> schedules = new ArrayList<>();
+		schedules.addAll(this.scReposity.findTimeAvailableByDentistId(dentist_id));
+		return schedules;	
+	}
 	
 	@GetMapping(path="find")
 	public @ResponseBody Dentists showResourceDentistListById(){

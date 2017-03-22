@@ -64,6 +64,9 @@ dependencies {
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
     
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.8.6'
+    
     //webjars
     //compile 'org.webjars:bootstrap:4.0.0-alpha.6-1'
     compile 'org.webjars:bootstrap:3.3.7'

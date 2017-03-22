@@ -1,0 +1,9 @@
+package com.dentalclinic.queryModel;
+
+public class QueryEntity {
+
+}
+
+class AppointmentTypeName{
+	
+}

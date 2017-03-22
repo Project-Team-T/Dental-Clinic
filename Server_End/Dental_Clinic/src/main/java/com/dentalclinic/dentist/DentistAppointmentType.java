@@ -15,6 +15,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.dentalclinic.appointment.AppointmentType;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
 @Table(name = "Dentist_Appointmenttype")
@@ -32,12 +34,14 @@ public class DentistAppointmentType implements Serializable{
 	@Id
 	@ManyToOne
 	@JoinColumn(name="dentist_id", insertable=false, updatable=false)
+	@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class)
 //	@JoinColumn(name="dentist_id", referencedColumnName="id")
 	private Dentist dentist;
 	
 	@Id
 	@ManyToOne
 	@JoinColumn(name="appointmenttype_id", insertable=false, updatable=false)
+	@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class)
 //	@JoinColumn(name="dentist_id", referencedColumnName="id")
 	private AppointmentType appointmentType;
 	

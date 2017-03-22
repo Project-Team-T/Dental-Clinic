@@ -20,8 +20,9 @@ import org.springframework.beans.support.MutableSortDefinition;
 import org.springframework.beans.support.PropertyComparator;
 
 import com.dentalclinic.appointment.Appointment;
-import com.dentalclinic.appointment.AppointmentType;
 import com.dentalclinic.model.Person;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 /**
  * @author Xiangting Fan
  */
@@ -51,8 +52,9 @@ public class Dentist extends Person{
 //	@JoinTable(name = "Dentist_AppointmentType", joinColumns = @JoinColumn(name = "dentist_id"), inverseJoinColumns = @JoinColumn(name = "appointmenttype_id"))
 //    private Set<AppointmentType> appointmentTypes;
 	
-	@ManyToMany(fetch=FetchType.EAGER)
+	@ManyToMany(fetch=FetchType.EAGER,cascade=CascadeType.ALL)
 	@JoinTable(name="Dentist_Schedule", joinColumns = @JoinColumn(name = "dentist_id"), inverseJoinColumns = @JoinColumn(name = "schedule_id"))
+	@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class)
 	private Set<Schedule> schedules;
 	
 	public Dentist(){

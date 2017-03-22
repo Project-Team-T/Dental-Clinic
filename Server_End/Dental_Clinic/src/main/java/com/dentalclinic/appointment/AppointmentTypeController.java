@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.dentalclinic.dentist.Dentist;
+import com.dentalclinic.queryModel.AppointmentTypeName;
 
 
 @Controller
@@ -47,9 +48,11 @@ public class AppointmentTypeController {
 	}
 	
 	@GetMapping(value="appointment/appointmentType.json")
-	public @ResponseBody AppointmentTypes showSourceAppointmentTypeList(){
-		AppointmentTypes appointmentTypes = new AppointmentTypes();
-		appointmentTypes.getAppointmenttypeList().addAll(this.atRepository.findAppointmentTypeName());
+	public @ResponseBody List<AppointmentTypeName> showSourceAppointmentTypeList(){
+//		AppointmentTypes appointmentTypes = new AppointmentTypes();
+//		appointmentTypes.getAppointmenttypeList().addAll(this.atRepository.findAppointmentTypeName());
+		List<AppointmentTypeName> appointmentTypes = new ArrayList<>();
+		appointmentTypes.addAll(this.atRepository.findAppointmentTypeName());
 		return appointmentTypes;
 	}
 	@GetMapping(path="appointment/queryappointmentType")

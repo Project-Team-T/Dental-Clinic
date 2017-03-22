@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package com.example.blog;
+
+import org.springframework.data.repository.Repository;
+
+/**
+ * @author fanfan
+ *
+ */
+public interface BlogRepository extends Repository<Blog, Integer> {
+
+	@Query()
+	Coll
+	
+//	@Query("select blog from Blog blog join blog.creator creator where creator.role = ?1")
+//    Page<Blog> findByRole(String role, Pageable pageable);
+}

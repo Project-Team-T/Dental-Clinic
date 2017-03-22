@@ -38,8 +38,9 @@ public interface DentistRepository extends Repository<Dentist, Integer> {
     Collection<Dentist> findAll() throws DataAccessException;
     
     
-    @Query("SELECT dt.id, dt.firstName, dt.lastName FROM Dentist dt")
+    @Query("SELECT dt.id as id, dt.firstName as firstName, dt.lastName as lastName FROM Dentist dt")
     @Transactional(readOnly = true)
+    @Cacheable("dentistNameList")
     Collection<? extends Dentist> findDentistNames() throws DataAccessException;
     
     public final static String Query_dentist_by_appointmenttype = "SELECT dt.id, dt.firstName, dt.lastName FROM Dentist dt"
@@ -48,7 +49,7 @@ public interface DentistRepository extends Repository<Dentist, Integer> {
     		+ " where dat.appointmentType.id = :id")
     @Transactional(readOnly = true)
     Collection<Dentist> findDentistbyAppType(@Param("id") int apptypeId) throws DataAccessException;
-    	
     
+       
 }
 
