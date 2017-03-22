@@ -57,12 +57,10 @@ public class Schedule extends BaseEntity{
 		Day = day;
 	}
 	
-	@JsonFormat(pattern="h:mm a")
 	public Date getTime_begin(){
 		return this.Time_begin;
 	}
 	
-	@JsonFormat(pattern="HH:mm",timezone = "GMT+0")
 	public void setTime_begin(Date Time_begin){
 		this.Time_begin = Time_begin;
 	}

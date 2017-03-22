@@ -26,5 +26,4 @@ http://localhost:8001/appointment/appointmentType.json
 ## Based on the appointmentType ID get the list of dentists:
 http://localhost:8001/dentist/querybyAppointmentType?Aptype_id=1 
 
-http://localhost:8001/dentist/querytimeavailabe?dentistId=1
-
+http://localhost:8001/dentist/querytimeavailabe?dentist_id=1

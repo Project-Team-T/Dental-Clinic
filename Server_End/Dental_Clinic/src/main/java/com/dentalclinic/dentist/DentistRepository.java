@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.dentalclinic.dentist.Dentist;
 import com.dentalclinic.patient.Patient;
+import com.dentalclinic.queryModel.DentistInfoWithAppointmentType;
 
 /**
  * @author Xiangting Fan
@@ -43,12 +44,15 @@ public interface DentistRepository extends Repository<Dentist, Integer> {
     @Cacheable("dentistNameList")
     Collection<? extends Dentist> findDentistNames() throws DataAccessException;
     
-    public final static String Query_dentist_by_appointmenttype = "SELECT dt.id, dt.firstName, dt.lastName FROM Dentist dt"
+    public final static String Query_dentist_by_appointmenttype = 
+    		"SELECT dt.id, dt.firstName, dt.lastName FROM Dentist dt"
     		+ " ";
-    @Query("SELECT dt.id, dt.firstName, dt.lastName FROM Dentist dt join dt.dentistAppointmentTypes dat"
+    @Query("SELECT new com.dentalclinic.queryModel.DentistInfoWithAppointmentType(dt.id, dt.firstName, dt.lastName)"
+    		+ " FROM Dentist dt join dt.dentistAppointmentTypes dat"
     		+ " where dat.appointmentType.id = :id")
     @Transactional(readOnly = true)
-    Collection<Dentist> findDentistbyAppType(@Param("id") int apptypeId) throws DataAccessException;
+    @Cacheable("dentistListwithAppType")
+    Collection<DentistInfoWithAppointmentType> findDentistbyAppType(@Param("id") int apptypeId) throws DataAccessException;
     
        
 }

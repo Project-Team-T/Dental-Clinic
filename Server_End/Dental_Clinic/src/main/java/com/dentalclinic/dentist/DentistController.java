@@ -22,6 +22,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.dentalclinic.dentist.Dentist;
 import com.dentalclinic.dentist.DentistRepository;
+import com.dentalclinic.queryModel.DaysAvailableWithDentist;
+import com.dentalclinic.queryModel.DentistInfoWithAppointmentType;
 
 /**
  * @author Xiangting Fan
@@ -117,15 +119,15 @@ public class DentistController {
 	}
 	
 	@GetMapping(path="/querybyAppointmentType")
-	public @ResponseBody List<Dentist> QueryDentistByApptype (@RequestParam int Aptype_id){
-		List<Dentist> dentists = new ArrayList<>();
+	public @ResponseBody List<DentistInfoWithAppointmentType> QueryDentistByApptype (@RequestParam int Aptype_id){
+		List<DentistInfoWithAppointmentType> dentists = new ArrayList<>();
 		dentists.addAll(this.dtRepository.findDentistbyAppType(Aptype_id));
 		return dentists;	
 		}
 	
-	@GetMapping(path="/querytimeavailabe.json")
-	public @ResponseBody List<Schedule> queryavailabletime (@RequestParam int dentist_id){
-		List<Schedule> schedules = new ArrayList<>();
+	@GetMapping(path="/querytimeavailabe")
+	public @ResponseBody List<DaysAvailableWithDentist> queryavailabletime (@RequestParam int dentist_id){
+		List<DaysAvailableWithDentist> schedules = new ArrayList<>();
 		schedules.addAll(this.scReposity.findTimeAvailableByDentistId(dentist_id));
 		return schedules;	
 	}
