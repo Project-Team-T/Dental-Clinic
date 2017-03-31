@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="getDentist" key="selection"/>
+		<item value="logo" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="logo"/>
+			<item value="glyphicon"/>
+			<item value="menuItem"/>
+			<item value="menu"/>
+			<item value="34302D"/>
+			<item value="css"/>
 			<item value="getDentistList"/>
 			<item value="getDentist"/>
-			<item value="name"/>
-			<item value="types"/>
-			<item value="nrOfS"/>
-			<item value="nrOfSpecialties"/>
-			<item value="nrOf"/>
-			<item value="DentistList"/>
 		</list>
 		<list key="replacehistory">
 			<item value="lastName"/>
@@ -24,9 +24,9 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="287" key="DIALOG_WIDTH"/>
-		<item value="1|.SF NS Text|13.0|0|COCOA|1|.SFNSText-Regular" key="DIALOG_FONT_NAME"/>
-		<item value="398" key="DIALOG_HEIGHT"/>
+		<item value="1|.SF NS Text|13.0|0|COCOA|1|.SFNSText" key="DIALOG_FONT_NAME"/>
+		<item value="417" key="DIALOG_HEIGHT"/>
 		<item value="852" key="DIALOG_X_ORIGIN"/>
-		<item value="263" key="DIALOG_Y_ORIGIN"/>
+		<item value="259" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

@@ -1,0 +1,24 @@
+<html xmlns:th="http://www.thymeleaf.org"
+  th:replace="~{fragments/layout :: layout (~{::body},'blog')}">
+
+<body>
+
+  <h2>Add a blog</h2>
+  <form th:object="${blog}" class="form-horizontal" id="add-blog-form" method="post">
+    <div class="form-group has-feedback">
+      <input 
+      	th:replace="~{fragments/selectField :: select('Blog Type', 'blogType', ${blogtypes})}" />
+      <input
+        th:replace="~{fragments/inputField :: input ('Title', 'title')}" />       
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button
+          th:with="text=${blog['new']} ? 'Add Blog' : 'Update Blog'"
+          class="btn btn-default" type="submit" th:text="${text}">Submit and add contents
+          </button>
+      </div>
+    </div> 
+  </form>
+</body>
+</html>

@@ -52,6 +52,10 @@ public class Person extends BaseEntity {
         this.lastName = lastName;
     }
     
+    public String getFullName(){
+    	return this.getFirstName() + " " + this.getLastName();
+    }
+    
     @Override
     public String toString() {
         return this.getFirstName() + " " + this.getLastName();
